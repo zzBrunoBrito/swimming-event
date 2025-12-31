@@ -15,7 +15,7 @@
 	<body class="is-preload">
 
 		<!-- Header -->
-			<header id="header">
+			<!-- <header id="header">
 				<h1>Big Picture</h1>
 				<nav>
 					<ul>
@@ -26,19 +26,83 @@
 						<li><a href="#contact">Contact</a></li>
 					</ul>
 				</nav>
-			</header>
+			</header> -->
 
 		<!-- Intro -->
 			<section id="intro" class="main style1 dark fullscreen">
+				<video id="intro-video" autoplay muted loop playsinline>
+					<source src="images/intro-video.mp4" type="video/mp4">
+					<!-- Fallback image if video doesn't load -->
+					Your browser does not support the video tag.
+				</video>
+				<button id="unmute-btn" class="unmute-button" aria-label="Unmute video">
+					<i class="fas fa-volume-mute"></i>
+				</button>
 				<div class="content">
 					<header>
-						<h2>Hey.</h2>
+						<h2>Águas abertas Umari 2025</h2>
 					</header>
-					<p>Welcome to <strong>Big Picture</strong> a responsive site template designed by <a href="https://html5up.net">HTML5 UP</a><br />
-					and released for free under the <a href="https://html5up.net/license">Creative Commons Attribution license</a>.</p>
+					<p>Primeiro Águas abertas do cariri em Dezembro de 2025.<br />
+					Organização:  <strong>Juarez Lôbo</strong> e  <strong>Richardson Bezerra</strong>.</p>
 					<footer>
-						<a href="#one" class="button style2 down">More</a>
+						<a href="#work" class="button style2 down">More</a>
 					</footer>
+				</div>
+			</section>
+
+			<!-- Work -->
+			<section id="work" class="main style3 primary">
+				<div class="content">
+					<header>
+						<h2>Fotos do evento</h2>
+					</header>
+
+					<!-- Gallery  -->
+						<div class="gallery">
+							<article class="from-left">
+								<a href="images/fulls/001.jpg" class="image fit"><img src="images/fulls/001.jpg" title="Foto do evento" alt="" /></a>
+							</article>
+							<article class="from-left">
+								<a href="images/fulls/013.jpg" class="image fit"><img src="images/fulls/013.jpg" title="Foto do evento" alt="" /></a>
+							</article>
+							<article class="from-right">
+								<a href="images/fulls/003.jpg" class="image fit"><img src="images/fulls/003.jpg" title="Foto do evento" alt="" /></a>
+							</article>
+							<article class="from-left">
+								<a href="images/fulls/004.jpg" class="image fit"><img src="images/fulls/004.jpg" title="Foto do evento" alt="" /></a>
+							</article>
+							<article class="from-right">
+								<a href="images/fulls/005.jpg" class="image fit"><img src="images/fulls/005.jpg" title="Foto do evento" alt="" /></a>
+							</article>
+							<article class="from-left">
+								<a href="images/fulls/016.jpg" class="image fit"><img src="images/fulls/016.jpg" title="Foto do evento" alt="" /></a>
+							</article>
+							<article class="from-left">
+								<a href="images/fulls/008.jpg" class="image fit"><img src="images/fulls/008.jpg" title="Foto do evento" alt="" /></a>
+							</article>
+							<article class="from-right">
+								<a href="images/fulls/006.jpg" class="image fit"><img src="images/fulls/006.jpg" title="Foto do evento" alt="" /></a>
+							</article>
+							<article class="from-right">
+								<a href="images/fulls/010.jpg" class="image fit"><img src="images/fulls/010.jpg" title="Foto do evento" alt="" /></a>
+							</article>
+							<article class="from-left">
+								<a href="images/fulls/018.jpg" class="image fit"><img src="images/fulls/018.jpg" title="Foto do evento" alt="" /></a>
+							</article>
+							<article class="from-right">
+								<a href="images/fulls/012.jpg" class="image fit"><img src="images/fulls/012.jpg" title="Foto do evento" alt="" /></a>
+							</article>
+							<article class="from-left">
+								<a href="images/fulls/015.jpg" class="image fit"><img src="images/fulls/015.jpg" title="Foto do evento" alt="" /></a>
+							</article>
+							<article class="from-left">
+								<a href="images/fulls/017.jpg" class="image fit"><img src="images/fulls/017.jpg" title="Foto do evento" alt="" /></a>
+							</article>
+							<article class="from-left">
+								<a href="images/fulls/011.jpg" class="image fit"><img src="images/fulls/011.jpg" title="Foto do evento" alt="" /></a>
+							</article>
+						</div>
+
 				</div>
 			</section>
 
@@ -46,11 +110,14 @@
 			<section id="one" class="main style2 right dark fullscreen">
 				<div class="content box style2">
 					<header>
-						<h2>What I Do</h2>
+						<h2>Provas</h2>
 					</header>
-					<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
-					Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis arcu,
-					id varius justo euismod in. Curabitur egestas consectetur magna.</p>
+					<ul>
+						<li>item 1</li>
+						<li>item 1</li>
+						<li>item 1</li>
+						<li>item 1</li>
+					</ul>
 				</div>
 				<a href="#two" class="button style2 down anchored">Next</a>
 			</section>
@@ -68,40 +135,7 @@
 				<a href="#work" class="button style2 down anchored">Next</a>
 			</section>
 
-		<!-- Work -->
-			<section id="work" class="main style3 primary">
-				<div class="content">
-					<header>
-						<h2>My Work</h2>
-						<p>Lorem ipsum dolor sit amet et sapien sed elementum egestas dolore condimentum.
-						Fusce blandit ultrices sapien, in accumsan orci rhoncus eu. Sed sodales venenatis
-						arcu, id varius justo euismod in. Curabitur egestas consectetur magna vitae.</p>
-					</header>
-
-					<!-- Gallery  -->
-						<div class="gallery">
-							<article class="from-left">
-								<a href="images/fulls/01.jpg" class="image fit"><img src="images/thumbs/01.jpg" title="The Anonymous Red" alt="" /></a>
-							</article>
-							<article class="from-right">
-								<a href="images/fulls/02.jpg" class="image fit"><img src="images/thumbs/02.jpg" title="Airchitecture II" alt="" /></a>
-							</article>
-							<article class="from-left">
-								<a href="images/fulls/03.jpg" class="image fit"><img src="images/thumbs/03.jpg" title="Air Lounge" alt="" /></a>
-							</article>
-							<article class="from-right">
-								<a href="images/fulls/04.jpg" class="image fit"><img src="images/thumbs/04.jpg" title="Carry on" alt="" /></a>
-							</article>
-							<article class="from-left">
-								<a href="images/fulls/05.jpg" class="image fit"><img src="images/thumbs/05.jpg" title="The sparkling shell" alt="" /></a>
-							</article>
-							<article class="from-right">
-								<a href="images/fulls/06.jpg" class="image fit"><img src="images/thumbs/06.jpg" title="Bent IX" alt="" /></a>
-							</article>
-						</div>
-
-				</div>
-			</section>
+		
 
 		<!-- Contact -->
 			<section id="contact" class="main style3 secondary">
@@ -154,6 +188,28 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+				// Video unmute functionality
+				(function() {
+					var video = document.getElementById('intro-video');
+					var unmuteBtn = document.getElementById('unmute-btn');
+					
+					if (video && unmuteBtn) {
+						unmuteBtn.addEventListener('click', function() {
+							var icon = unmuteBtn.querySelector('i');
+							if (video.muted) {
+								video.muted = false;
+								icon.className = 'fas fa-volume-up';
+								unmuteBtn.setAttribute('aria-label', 'Mute video');
+							} else {
+								video.muted = true;
+								icon.className = 'fas fa-volume-mute';
+								unmuteBtn.setAttribute('aria-label', 'Unmute video');
+							}
+						});
+					}
+				})();
+			</script>
 
 	</body>
 </html>
