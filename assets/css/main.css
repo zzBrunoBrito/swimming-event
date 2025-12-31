@@ -1902,14 +1902,14 @@ input, select, textarea {
 	/* body {
 		padding-top: 3em;
 	} */
-
+/* 
 		@media screen and (max-width: 736px) {
 
 			body {
 				padding-top: 2.5em;
 			}
 
-		}
+		} */
 
 /* Main */
 
@@ -2261,19 +2261,28 @@ input, select, textarea {
 			bottom: auto !important;
 			margin: 0 !important;
 			z-index: 10000;
-			background: rgba(255, 255, 255, 0.15);
-			border: 2px solid rgba(255, 255, 255, 0.6);
-			border-radius: 50%;
-			width: 3.5em;
-			height: 3.5em;
+			background: rgba(255, 255, 255, 0.25);
+			border: 2px solid rgba(255, 255, 255, 0.8);
+			border-radius: 50% !important;
+			width: 2.9em;
+			height: 2.9em;
+			min-width: 2.9em;
+			min-height: 2.9em;
+			max-width: 2.9em;
+			max-height: 2.9em;
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			aspect-ratio: 1 / 1;
+			box-sizing: border-box;
+			padding: 0;
 			cursor: pointer;
 			color: #ffffff;
-			font-size: 1.2em;
+			font-size: 0.72em;
 			transition: all 0.3s ease;
 			outline: none;
+			animation: pulse 2s ease-in-out infinite;
+			box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 		}
 
 			.unmute-button:hover {
@@ -2285,6 +2294,17 @@ input, select, textarea {
 			.unmute-button:active {
 				transform: scale(0.95);
 			}
+
+		@keyframes pulse {
+			0%, 100% {
+				box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+				opacity: 1;
+			}
+			50% {
+				box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+				opacity: 0.9;
+			}
+		}
 
 		#intro::before {
 			content: '';
